@@ -81,7 +81,7 @@ services:
       - zookeeper
 
   connect:
-    image: confluentinc/kafka-connect-datagen:latest
+    image: confluentinc/cp-kafka-connect-base
 
   kowl:
     image: quay.io/cloudhut/kowl:master # We use the master tag as we want to use the latest features e.g. creation of topics.
