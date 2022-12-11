@@ -2,7 +2,6 @@ from hdfs import InsecureClient
 from kafka import KafkaConsumer
 import time
 
-client = InsecureClient('http://namenode:9870', user='root')
 consumer = KafkaConsumer(
     'alice-in-kafkaland',
      bootstrap_servers=['kafka:9092'],
