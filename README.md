@@ -15,3 +15,4 @@ sudo docker restart connect
 
 sudo curl -X POST -H "Content-Type: application/json" --data @github-connector-config.json http://localhost:8083/connectors
 
+kafkacat -C -b localhost:9092 -t github-commits
