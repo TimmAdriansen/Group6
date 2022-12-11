@@ -10,7 +10,7 @@ docker cp ./confluentinc-kafka-connect-github-2.1.2/. connect:/usr/share/java
 
 sudo docker restart connect
 
-curl https://localhost:8083/connectors-plugins
+curl http://localhost:8083/connectors-plugins
 
 curl -X POST -H "Content-Type: application/json" --data @github-connector-config.json http://localhost:8083/connectors
 
