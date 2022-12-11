@@ -3,11 +3,12 @@ from kafka import KafkaConsumer
 import time
 
 consumer = KafkaConsumer(
-    'alice-in-kafkaland',
-     bootstrap_servers=['kafka:9092'],
+    'github-commits',
+     bootstrap_servers=['localhost:9092'],
      auto_offset_reset='earliest',
      enable_auto_commit=True,
      group_id='group1',
+     api_version=(0,10,2),
      value_deserializer=lambda x: x.decode('utf-8'))
 
 hdfs = InsecureClient("http://namenode:9870")
