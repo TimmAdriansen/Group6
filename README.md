@@ -7,7 +7,7 @@ You can find the documentation and instructions for this repo at [https://docs.c
 
 # Commands for confluent
 
-sudo curl http://localhost:8083/connectors-plugins
+sudo curl http://localhost:8083/connector-plugins
 
 sudo docker cp ./confluentinc-kafka-connect-github-2.1.2/. connect:/usr/share/java
 
