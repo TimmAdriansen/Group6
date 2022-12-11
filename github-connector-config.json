@@ -9,7 +9,7 @@
 "github.repositories":"TimmAdriansen/Group6",
 "github.resources":"commits",
 "github.since":"2019-01-01",
-"github.access.token":"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",
+"github.access.token":"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",
 "topic.name.pattern":"github-${resourceName}",
 "key.converter":"org.apache.kafka.connect.json.JsonConverter",
 "value.converter":" org.apache.kafka.connect.json.JsonConverter",
