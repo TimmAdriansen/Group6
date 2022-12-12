@@ -10,7 +10,7 @@ spark = SparkSession \
         .config("spark.sql.debug.maxToStringFields", "100") \
         .getOrCreate()
 
-
+print("lol")
 # Limit cores to 1, and tell each executor to use one core = only one executor is used by Spark
 #conf = SparkConf().set('spark.executor.cores', 1).set('spark.cores.max',1).set('spark.executor.memory', '1g')
 #sc = SparkContext(master='spark://spark-master:7077', appName='myAppName', conf=conf)
